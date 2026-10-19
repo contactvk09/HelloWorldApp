@@ -15,12 +15,13 @@ A beautifully designed Hello World application built with modern web technologie
 - 💎 Glassmorphism card design
 - 📱 Fully responsive layout
 - ⚡ Smooth entrance animations
+- 🔄 Rotating emoji display (👋 🌍 ✨ 🚀 💫 🎉)
 
 ## 🛠️ Tech Stack
 
 | Technology | Purpose |
 |---|---|
-| **React 18** | UI library |
+| **React 18** | UI library with hooks |
 | **TypeScript** | Type-safe JavaScript |
 | **Vite** | Build tool & dev server |
 | **Tailwind CSS** | Utility-first CSS framework |
@@ -46,6 +47,8 @@ npm install
 npm run dev
 ```
 
+The app will be available at `http://localhost:5173`
+
 ### Build for Production
 
 ```bash
@@ -54,6 +57,20 @@ npm run build
 
 The built files will be in the `dist/` directory.
 
+### Preview Production Build
+
+```bash
+npm run preview
+```
+
+## 📜 Available Scripts
+
+| Command | Description |
+|---|---|
+| `npm run dev` | Start development server with hot reload |
+| `npm run build` | Build the app for production |
+| `npm run preview` | Preview the production build locally |
+
 ## 📁 Project Structure
 
 ```
@@ -61,11 +78,22 @@ The built files will be in the `dist/` directory.
 │   ├── App.tsx          # Main application component
 │   ├── main.tsx         # Application entry point
 │   └── index.css        # Global styles
+├── public/              # Static assets
 ├── index.html           # HTML template
 ├── vite.config.ts       # Vite configuration
 ├── tailwind.config.js   # Tailwind configuration
+├── tsconfig.json        # TypeScript configuration
 └── package.json         # Dependencies & scripts
 ```
+
+## 🎨 Customization
+
+To customize the app, edit `src/App.tsx`:
+
+- **Change colors**: Modify the gradient classes (e.g., `from-indigo-900 via-purple-900 to-pink-800`)
+- **Add emojis**: Update the `emojis` array in the `useEffect` hook
+- **Change text**: Edit the heading and subtitle in the JSX
+- **Adjust animations**: Modify transition durations and animation classes
 
 ## 📜 License
 
