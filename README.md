@@ -1,6 +1,6 @@
 # Hello World App
 
-A beautifully designed Hello World application built with modern web technologies.
+A beautifully designed Hello World application by AI QWEN CODE editor built with modern web technologies.
 
 ![React](https://img.shields.io/badge/React-18-blue)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
